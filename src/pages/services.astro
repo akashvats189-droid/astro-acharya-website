@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+---
+
+<Layout title="Services - Astro Acharya">
+  <section class="services-section">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p class="intro">Comprehensive astrological solutions for your life's journey</p>
+      
+      <div class="services-grid">
+        <ServiceCard 
+          icon="🌟"
+          title="Birth Chart Analysis"
+          description="Comprehensive analysis of your natal chart revealing personality traits, strengths, and life purpose."
+        />
+        <ServiceCard 
+          icon="💫"
+          title="Horoscope Reading"
+          description="Detailed daily, weekly, and yearly horoscopes tailored to your zodiac sign."
+        />
+        <ServiceCard 
+          icon="💎"
+          title="Gemstone Guidance"
+          description="Personalized gemstone recommendations to balance your planetary influences."
+        />
+        <ServiceCard 
+          icon="💑"
+          title="Relationship Compatibility"
+          description="Deep dive into relationship compatibility and love life predictions."
+        />
+        <ServiceCard 
+          icon="🏠"
+          title="Vastu Consultation"
+          description="Align your living spaces with cosmic energies for prosperity and well-being."
+        />
+        <ServiceCard 
+          icon="🔮"
+          title="Career Guidance"
+          description="Astrological insights for career choices, timing, and professional success."
+        />
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .services-section {
+    padding: 4rem 2rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .services-section h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .intro {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+</style>

@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us - Astro Acharya">
+  <section class="about-section">
+    <div class="container">
+      <h1>About Astro Acharya</h1>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Welcome to Celestial Wisdom</h2>
+          <p>
+            At Astro Acharya, we believe in the profound connection between the cosmos and human destiny.
+            With over 15 years of experience in Vedic Astrology, our expert practitioners are dedicated to
+            providing accurate readings and meaningful guidance.
+          </p>
+          
+          <h3>Our Mission</h3>
+          <p>
+            To empower individuals by unveiling the cosmic patterns that influence their lives, helping them
+            make informed decisions and navigate their path with clarity and confidence.
+          </p>
+          
+          <h3>Our Expertise</h3>
+          <ul class="expertise-list">
+            <li>🌙 Vedic Astrology & Chart Analysis</li>
+            <li>⭐ Numerology & Life Path Reading</li>
+            <li>💎 Gemstone Recommendations</li>
+            <li>🔮 Horoscope Predictions</li>
+            <li>💑 Compatibility Analysis</li>
+            <li>🏠 Vastu Consultation</li>
+          </ul>
+        </div>
+        
+        <div class="about-image">
+          <div class="zodiac-wheel">♈️ ♉️ ♊️ ♋️ ♌️ ♍️ ♎️ ♏️ ♐️ ♑️ ♒️ ♓️</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .about-section {
+    padding: 4rem 2rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.3rem;
+    color: #764ba2;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-text p {
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 1rem;
+  }
+
+  .expertise-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .expertise-list li {
+    padding: 0.8rem 0;
+    color: #bbb;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #333;
+  }
+
+  .zodiac-wheel {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 3rem;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+
+    .about-section h1 {
+      font-size: 2rem;
+    }
+  }
+</style>

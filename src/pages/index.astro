@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+---
+
+<Layout title="Astro Acharya - Celestial Wisdom & Guidance">
+  <Hero />
+  <Services />
+  
+  <section class="cta-section">
+    <div class="container">
+      <h2>Discover Your Cosmic Destiny</h2>
+      <p>Get personalized astrological insights tailored just for you</p>
+      <a href="/contact" class="btn btn-primary">Book a Consultation</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .cta-section p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 2rem;
+  }
+</style>
